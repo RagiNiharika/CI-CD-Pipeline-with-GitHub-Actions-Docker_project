@@ -1,7 +1,7 @@
 FROM python:3.9-slim
 
 LABEL maintainer="niharikachary205@gmail.com"
-LABEL description="CI/CD Demo Flask App"
+LABEL description="CI/CD pipeline project for  Flask App"
 
 WORKDIR /app
 
