@@ -30,4 +30,4 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name == 'push' }}
-          tags: "${{ secrets.DOCKER_USERNAME }}/app.py:latest"
+          tags: "${{ secrets.DOCKER_USERNAME }}/ci_cd_demo:latest"
