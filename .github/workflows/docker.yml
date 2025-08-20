@@ -32,6 +32,6 @@ jobs:
           push: ${{ github.event_name == 'push' }}
           tags: raginiharika/ci_cd_demo:latest
 
-      - shell: |
-          echo username - "${{ secrets.DOCKER_USERNAME }}"
+      - run: 
+         echo username - "${{ secrets.DOCKER_USERNAME }}"
           
