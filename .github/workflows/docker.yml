@@ -30,8 +30,8 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name == 'push' }}
-          tags: raginiharika/ci_cd_demo:latest
+          tags: ${{ variables.USERNAME }}/ci_cd_demo:latest
 
       - run: 
-         echo username - "${{ secrets.DOCKER_USERNAME }}"
+         echo username - "${{ variables.USERNAME }}"
           
